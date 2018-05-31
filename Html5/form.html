@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="html_form/form.css">
+
+<title>HTML5</title>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+</script>
+<![endif]-->
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+</style>
+</head>
+<body>
+
+<div class="emailForm"> 
+<form method="post" action="mailto:infos@gscs.ch" 
+name="ContactForm" onsubmit="return ValidateContactForm();">
+
+
+Name: 
+<br />
+<input type="text" size="20" name="Name">
+<p> </p>
+    E-mail:  
+<br />
+<input type="text" size="20" name="Email">
+<p> </p>
+
+Telefon:<br />
+<input type="text" size="20" name="Telephone"><br>
+        <input type="checkbox" name="DoNotCall" 
+        onclick="EnableDisable(this);">Keine Anruf bitte.
+<p> </p>
+    
+    Comments:<br />  
+
+        <textarea cols="20" name="Kommentar">  </textarea></p>
+    <p> </p>
+    <input type="submit" value="Send" name="submit">
+    <input type="reset" value="Reset" name="reset">
+</form>
+</div>
+<script src="ValidateContactForm.js"></script>
+<!--https://msdn.microsoft.com/en-us/library/office/aa218652(v=office.11).aspx-->
+</body>
+</html>
